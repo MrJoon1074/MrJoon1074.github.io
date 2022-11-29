@@ -1,0 +1,321 @@
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 0px
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1px;
+}
+
+.header-logo{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.header-text{
+    margin: 0;
+    padding-top: 1.5rem;
+    z-index: 4;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "barrio";
+    font-size: 4rem;
+}
+
+.header-button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #7AE3FD;
+    margin-right: 1rem;
+    margin-top: 1.65rem;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #7AE3FD;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.product-info {
+  margin-left: 10%;
+  margin-top: 65px;
+  display: grid;
+  margin-bottom: 60px;
+}
+
+.book-cover-container {
+  background-color: aliceblue;
+  border-radius: 10px;
+  height: 350px;
+  width: 350px;
+  grid-area: area1;
+}
+
+.book-cover {
+  margin-top: 5%;
+  margin-left: 10%;
+  height: 90%;
+  width: 80%;
+}
+
+.book-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  grid-area: area2;
+}
+
+.book-description {
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: area3;
+}
+
+.seller-button {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #7AE3FD;
+  margin-left: 1rem;
+}
+
+.review {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.review-icon {
+  width: 30px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.review-name {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.review-content {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media (min-width: 900px){
+  .product-info {
+    grid-template-areas:
+    "area1 area2"
+    "area1 area3";
+  }
+
+  .book-title {
+    margin-top: -30px;
+    grid-area: area2;
+    margin-left: 7%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+  }
+
+  .book-description {
+    grid-area: area3;
+    margin-left: 7%;
+    margin-right: 10%;
+    margin-top: -120px;
+  }
+
+  .review-name {
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+
+  .review-content {
+    margin-top: 0px;
+  }
+
+  #review-section-title {
+    margin-left: 10%;
+  }
+
+  .review-container {
+    display: grid;
+  }
+
+  .review {
+    width: 80%;
+  }
+
+  .review1 {
+    grid-column-start: 0;
+    grid-column-end: 1;
+  }
+
+  .review2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media (max-width: 899px){
+    .product-info {
+      grid-template-areas:
+      "area1"
+      "area2"
+      "area3";
+    }
+
+    .book-cover-container {
+      margin-left: 15%;
+      margin-right: 20%;
+      grid-area: area1;
+    }
+
+    .book-title {
+      grid-area: area2;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .book-description {
+      grid-area: area3;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    #review-section-title {
+      margin-left: 10%;
+    }
+
+    .review {
+      margin-bottom: 30px;
+    }
+
+    .review-container {
+      margin-left: 10%;
+    }
+
+    .review-name {
+      margin-left: 40px;
+      margin-top: 4px;
+    }
+
+    .review-content {
+      margin-top: 0px;
+    }
+
+    .review-container {
+      grid-template-areas:
+      "review1"
+      "review2";
+    }
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+
+}
+
+.time-left {
+  float: left;
+}
+.big_container{
+  font-style: normal;
+  display: none;
+  width: 20rem;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 22px;
+
+}
+.chat_text{
+text-align: center;
+font-size: 30px;
+font-family: "barrio";
+
+
+}
+.chat_box{
+  width: 15rem;
+  position: relative;
+}
+.send{
+  width: 4rem;
+  border-radius: 20px;
+  background-color: #7AE3FD;
+}
+.small_chat{
+    position: absolute;
+    left:0px;
+    right: 0px;
+    padding: 0px;
+    width: 20rem;
+}
+.small_chat:hover .big_container
+{
+  display: block;
+  
+}
+.small_chat:hover .chat_container 
+{
+  display: none;
+  
+}
+
+
+.chat_container{
+  background-color: #7AE3FD;
+  font-size: 25px;
+  font-family: "barrio";
+  width: 10rem;
+  text-align: center;
+  position: fixed;
+  left:0px;
+  bottom: 0px;
+  padding: 0px;
+  border-radius: 20px;
+}

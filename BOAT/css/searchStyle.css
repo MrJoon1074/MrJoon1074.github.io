@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 0px
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1px;
+}
+
+.header-logo{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.header-text{
+    margin: 0;
+    padding-top: 1.5rem;
+    z-index: 4;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "barrio";
+    font-size: 4rem;
+}
+
+.header-button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #7AE3FD;
+    margin-right: 1rem;
+    margin-top: 1.65rem;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    width: 60%;
+    border: 1px black solid;
+    height: 1.75rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-size: 1.25rem;
+}
+
+.search-button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #7AE3FD;
+    margin-left: 1rem;
+}
+
+.filters{
+    margin-left: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filters > input{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.filters > label{
+    color: gray
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.books{
+    display: grid;
+    grid-template-areas: "book1" "book2" "book3" "book4" "book5" "book6" "book7" "book8";
+    gap: 5% 5%;
+    padding-right: 10%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 700px) and (max-width: 1100px){
+    .books{
+      grid-template-areas: "book1 book2"
+      "book3 book4"
+      "book5 book6"
+      "book7 book8"
+    }
+  }
+
+  @media (min-width: 1100px){
+    .books{
+      grid-template-areas: "book1 book2 book3 book4"
+      "book5 book6 book7 book8"
+    }
+  }
+
+
+.book{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-price{
+    margin: 0
+}
+
+.book-cover{
+    margin: 0;
+}

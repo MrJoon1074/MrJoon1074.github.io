@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.header-button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #7AE3FD;
+    margin-right: 1rem;
+}
+
+main{
+    margin: 0px;
+}
+.boat-n-text{
+    display: flex;
+    align-items: center;
+    font-family: 'barrio';
+    font-size: 4rem;
+    justify-content: center;
+}
+
+.boat-title-big{
+    padding-top: 3.5rem;
+    margin: 0;
+    z-index: 4;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.boat-title-small{
+    padding-top: 3.5rem;
+    margin: 0;
+    z-index: 4;
+    overflow: hidden;
+    white-space: nowrap;  
+    display: none
+}
+
+@media (max-width: 975px){
+    .boat-title-small {display: inline-block;    }
+    .boat-title-big {display: none; }
+    
+
+}
+
+.boat-back{
+    margin: 0;
+    display: relative;
+    left: 1rem;
+    z-index: -1
+}
+.boat-front{
+    margin: 0;
+    z-index: -1;
+}
+
+.boat-water{
+    position: relative;
+    bottom: 2rem;
+    z-index: 2;
+    width: 100%
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    width: 60%;
+    border: 1px black solid; 
+    height: 1.75rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-size: 1.25rem;
+}
+
+.search-button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #7AE3FD;
+    margin-left: 1rem;
+}
