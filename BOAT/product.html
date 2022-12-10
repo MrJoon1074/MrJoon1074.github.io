@@ -5,6 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="./css/product.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barrio">
+
   </head>
 
   <body>
@@ -34,7 +35,7 @@
           dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
           sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-          <p>Asking Price: $140 <a href=""><button class="seller-button">Contact Seller</button></a></p>
+          <p>Asking Price: $140 <button class="seller-button" id="seller-button"onclick="showChat()">Contact Seller</button></p>
         </div>
       </div>
 
@@ -52,9 +53,9 @@
         </div>
       </div>
     </div>
-  <div class="small_chat">
-    <div class="big_container">
-      <p class="chat_text">Chat</p>
+    <div class="big_container" id="big_container">
+      <button id="min">x</button>
+      <div><p class="chat_text">Chat </p></div>
       <div class="container">
         <img src="images/icon.png" alt="Avatar" style="width:100%;">
         <p>Hello! I am interested in buying your book!</p>
@@ -84,12 +85,12 @@
       </div>
 
     </div>
-    <div class="chat_container"> chat</div>
+    <!-- <div class="chat_container"> chat</div> -->
 
-  </div>
+
 </div>
 
 
-
+<script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

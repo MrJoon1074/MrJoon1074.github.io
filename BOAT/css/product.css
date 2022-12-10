@@ -82,14 +82,6 @@ h2 {
   grid-area: area3;
 }
 
-.seller-button {
-  width: 8rem;
-  height: 2rem;
-  border-radius: 10px;
-  border: none;
-  background-color: #7AE3FD;
-  margin-left: 1rem;
-}
 
 .review {
   display: grid;
@@ -262,16 +254,7 @@ h2 {
 .time-left {
   float: left;
 }
-.big_container{
-  font-style: normal;
-  display: none;
-  width: 20rem;
-  background-color: white;
-  padding: 10px;
-  border: 2px solid grey;
-  border-radius: 22px;
 
-}
 .chat_text{
 text-align: center;
 font-size: 30px;
@@ -289,13 +272,12 @@ font-family: "barrio";
   background-color: #7AE3FD;
 }
 .small_chat{
-    position: absolute;
-    left:0px;
+    position: relative;
     right: 0px;
     padding: 0px;
     width: 20rem;
 }
-.small_chat:hover .big_container
+/* .small_chat:hover .big_container
 {
   display: block;
   
@@ -304,8 +286,39 @@ font-family: "barrio";
 {
   display: none;
   
-}
+} */
+.big_container{
 
+
+}
+#big_container{
+  visibility: hidden;
+  font-style: normal;
+  width: 20rem;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 22px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.seller-button {
+
+}
+#min{
+  position:fixed;
+  right: 1%;
+  border-radius: 10px;
+}
+#seller-button{
+  width: 8rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #7AE3FD;
+  margin-left: 1rem;
+}
 
 .chat_container{
   background-color: #7AE3FD;
@@ -313,8 +326,8 @@ font-family: "barrio";
   font-family: "barrio";
   width: 10rem;
   text-align: center;
-  position: fixed;
-  left:0px;
+  position: relative;
+  right: 0;
   bottom: 0px;
   padding: 0px;
   border-radius: 20px;
